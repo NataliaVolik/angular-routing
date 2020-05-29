@@ -1,1 +1,18 @@
-<h1>Home page</h1>
+<mat-toolbar color="primary">
+    <h1><a href="#" [ngStyle]="{'color': '#fff', 'text-decoration': 'none'}">Angular Routing</a></h1>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Posts</a>
+        <a href="#">About</a>
+
+        <button mat-raised-button color="accent">Login</button>
+        <button mat-raised-button color="accent">Logout</button>
+    </nav>
+</mat-toolbar>
+
+
+<div class="container">
+    <div class="card">
+        <app-home></app-home>
+    </div>
+</div>
