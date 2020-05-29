@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PostsService} from "../posts.service";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-posts',
@@ -8,12 +9,24 @@ import {PostsService} from "../posts.service";
 })
 export class PostsComponent implements OnInit {
 
-  constructor(private postsService: PostsService) {
+  showIds = false;
+
+  constructor(
+      public postsService: PostsService,
+      private route: ActivatedRoute
+  ) {
 
   }
 
   ngOnInit(): void {
-
+    this.route.queryParams.subscribe((params: any)=>{
+      // debugger;
+      console.log('Params', params);
+      // this.showIds = !!params.showIds
+    })
+  }
+  showId(){
+    this.showIds = !this.showIds;
   }
 
 }

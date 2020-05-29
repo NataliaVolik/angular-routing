@@ -1,9 +1,9 @@
 <div>
-    <button mat-raised-button color="accent">Back</button>
+    <button mat-raised-button color="accent" [routerLink]="'/posts'">Back</button>
 
-    <h1>Title</h1>
+    <h1>{{post.title}}</h1>
 
-    <p>Text</p>
+    <p>{{post.text}}</p>
 
-    <button mat-raised-button color="warn">Load 4 post</button>
+    <button mat-raised-button color="warn" (click)="loadPost()">Load 4 post</button>
 </div>
