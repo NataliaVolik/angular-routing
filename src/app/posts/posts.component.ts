@@ -8,7 +8,9 @@ import {PostsService} from "../posts.service";
 })
 export class PostsComponent implements OnInit {
 
-  constructor(private postsService: PostsService) { }
+  constructor(private postsService: PostsService) {
+
+  }
 
   ngOnInit(): void {
 
