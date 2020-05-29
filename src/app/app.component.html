@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
-    <h1><a href="#" [ngStyle]="{'color': '#fff', 'text-decoration': 'none'}">Angular Routing</a></h1>
+    <h1><a [routerLink]="['/']" [ngStyle]="{'color': '#fff', 'text-decoration': 'none'}">Angular Routing</a></h1>
     <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Posts</a>
-        <a href="#">About</a>
+        <a [routerLink]="['/']">Home</a>
+        <a [routerLink]="['/posts']">Posts</a>
+        <a [routerLink]="['/about']">About</a>
 
         <button mat-raised-button color="accent">Login</button>
         <button mat-raised-button color="accent">Logout</button>
@@ -14,6 +14,5 @@
 <div class="container">
     <div class="card">
         <router-outlet></router-outlet>
-        <!--<app-home></app-home>-->
     </div>
 </div>
