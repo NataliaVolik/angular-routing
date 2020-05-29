@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {PostsService, Post} from "../posts.service";
 
@@ -7,8 +7,8 @@ import {PostsService, Post} from "../posts.service";
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss']
 })
-export class PostComponent implements OnInit {
-
+export class PostComponent implements OnInit, OnDestroy {
+  subs : any;
   post: Post;
 
   constructor(
@@ -17,14 +17,18 @@ export class PostComponent implements OnInit {
       public postsService: PostsService) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params: any)=>{
+    // const postid = +this.route.snapshot.params.id;
+    // this.post = this.postsService.getById(postid);
+    this.subs = this.route.params.subscribe((params: any)=>{
 
       console.log('Params', params);
       this.post = this.postsService.getById(+params.id);
       // debugger;
     })
   }
-
+  ngOnDestroy(): void{
+    this.subs.unsubscribe();
+  }
   loadPost(){
     this.router.navigate(['/posts', 44])
   }

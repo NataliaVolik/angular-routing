@@ -1,4 +1,6 @@
 <h3>About page</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, illo.</p>
 
-<p><a href="#">Show Extra</a></p>
+<p><a mat-stroked-button [routerLink]="['/about', 'extra']">Show Extra</a></p>
+
+<router-outlet></router-outlet>
