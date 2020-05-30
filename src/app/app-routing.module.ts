@@ -6,6 +6,7 @@ import {PostsComponent} from "./posts/posts.component";
 import {PostComponent} from "./post/post.component";
 import {AboutExtraComponent} from "./about-extra/about-extra.component";
 import {ErrorPageComponent} from "./error-page/error-page.component";
+import {AuthGuard} from "./auth.guard";
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-    component: PostsComponent
+    component: PostsComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'posts/:id',

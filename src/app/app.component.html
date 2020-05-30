@@ -5,8 +5,8 @@
         <a [routerLink]="['/posts']" routerLinkActive="active">Posts</a>
         <a [routerLink]="['/about']" routerLinkActive="active">About</a>
 
-        <button mat-raised-button color="accent">Login</button>
-        <button mat-raised-button color="accent">Logout</button>
+        <button mat-raised-button color="accent" (click)="auth.login()">Login</button>
+        <button mat-raised-button color="accent" (click)="auth.logout()">Logout</button>
     </nav>
 </mat-toolbar>
 
