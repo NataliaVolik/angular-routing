@@ -12,6 +12,7 @@ import { AboutExtraComponent } from './about-extra/about-extra.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatButtonModule} from "@angular/material/button";
     AboutComponent,
     PostComponent,
     PostsComponent,
-    AboutExtraComponent
+    AboutExtraComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
