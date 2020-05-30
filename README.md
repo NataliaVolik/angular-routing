@@ -12,10 +12,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Screenshots
 
-<a href="assets/img/home.png"><img src="assets/img/home.png" width="280" ></a>
-<a href="assets/img/posts.png"><img src="assets/img/posts.png" width="280" ></a>
-<a href="assets/img/posts_2.png"><img src="assets/img/posts_2.png" width="280" ></a>
-<a href="assets/img/post.png"><img src="assets/img/post.png" width="280" ></a>
-<a href="assets/img/about.png"><img src="assets/img/about.png" width="280" ></a>
-<a href="assets/img/extra.png"><img src="assets/img/extra.png" width="280" ></a>
+<a href="src/assets/img/home.png"><img src="src/assets/img/home.png" width="280" ></a>
+<a href="src/assets/img/posts.png"><img src="src/assets/img/posts.png" width="280" ></a>
+<a href="src/assets/img/posts_2.png"><img src="src/assets/img/posts_2.png" width="280" ></a>
+<a href="src/assets/img/post.png"><img src="src/assets/img/post.png" width="280" ></a>
+<a href="src/assets/img/about.png"><img src="src/assets/img/about.png" width="280" ></a>
+<a href="src/assets/img/extra.png"><img src="src/assets/img/extra.png" width="280" ></a>
 
